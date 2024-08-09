@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Channel Auto-Popup",
+    "version": "1.0",
+    "description": "Displays the channel name of the current YouTube video in an automatic popup.",
+    "permissions": [
+      "*://www.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
